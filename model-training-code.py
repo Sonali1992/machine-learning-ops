@@ -51,7 +51,7 @@ def save_model_artifact(pipeline):
     model_artifact.upload_from_filename(artifact_name)
 
 def main():
-    filename = 'gs://sid-vertex-mlops/bike-share/hour.csv'
+    filename = 'gs://refreshing-gear-444410-r7/bike-share/hour.csv'
     df = load_data(filename)
     X, y = preprocess_data(df)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
