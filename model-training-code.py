@@ -8,7 +8,7 @@ from joblib import dump
 from sklearn.pipeline import make_pipeline
 
 storage_client = storage.Client()
-bucket = storage_client.bucket("sid-vertex-mlops")
+bucket = storage_client.bucket("abhi-ml-ops")
 
 def load_data(filename):
     df = pd.read_csv(filename)
